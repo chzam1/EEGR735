@@ -26,8 +26,12 @@ These are employed to drive values onto wires. As an example, assign a = b & c; 
 ## Full adder
 A full adder is a digital component that accepts three inputs, such as A, B, and Carry in, and outputs two outputs, SUM and Carryout, using logic gates. It is the most important component inside a processor's ALU, and it is used to increment addresses, table indexes, buffer pointers, and other locations where addition is necessary. By ORing the final outputs of two half adders, a complete adder can be formed. Because the full adder is a combinational circuit, it may be described using Verilog. Combinational logic is described by a Boolean equation, which is an expression of operations on variables.
 
+![img](/pix/F4.png)
+
 ## COMPARATOR
 A digital comparator, also known as a magnitude comparator, is a hardware electronic device that compares two binary integers to see if one is greater than, less than, or equal to the other. Central processing units (CPUs)and microcontrollers both use comparators (MCUs).
+
+![img](/pix/C4.png)
 
 ## Arithmetic Logic Unit (ALU)
 Arithmetic logic unit (ALU) is a type of combinational logic circuit that is used to implement arithmetic and logic operations in a CPU. Typically, an ALU will receive one or two input operands and return a result along with a set of status bits. The operation will be determined by a selected input.
