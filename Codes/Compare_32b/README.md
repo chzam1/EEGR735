@@ -1,6 +1,8 @@
 # COMPARATOR
 A digital comparator, also known as a magnitude comparator, is a hardware electronic device that compares two binary integers to see if one is greater than, less than, or equal to the other. Central processing units (CPUs)and microcontrollers both use comparators (MCUs).
 
+![img](/pix/C4.png)
+
 This is the system Verilog code of the behavioral model of a comparator the shows the functionality of the design comparator of 32 bit. 
 
 ![img](/pix/C1.png)
