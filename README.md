@@ -3,7 +3,7 @@
  Q1. 1-bit full adder  
 Q2. 32-bits full adder  https://github.com/chzam1/EEGR735/blob/main/Codes/full_adder_32b/README.md  
  Q3. 32-bits Comparator  
- Q4. 32-bits ALU
+ Q4. 32-bits ALU  https://github.com/chzam1/EEGR735/blob/main/Codes/ALU_32b/README.md
 
 ## A Brief Introduction
 The Verilog HDL serves as a vehicle for designing, verifying, and synthesizing a circuit. It is also served as a medium for exchanging designs between designers. System Verilog is a Verilog-based Hardware Description and Hardware Verification Language. Module refers to a Verilog code block which implement a functionality of a design. It can be enclosed within other modules and lower-level modules will communicate with higher-level modules using the ports of their input and output. 
