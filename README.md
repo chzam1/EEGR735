@@ -2,7 +2,7 @@
 
  Q1. 1-bit full adder  
 Q2. 32-bits full adder  https://github.com/chzam1/EEGR735/blob/main/Codes/full_adder_32b/README.md  
- Q3. 32-bits Comparator  
+ Q3. 32-bits Comparator  https://github.com/chzam1/EEGR735/blob/main/Codes/Compare_32b/README.md  
  Q4. 32-bits ALU  https://github.com/chzam1/EEGR735/blob/main/Codes/ALU_32b/README.md
 
 ## A Brief Introduction
