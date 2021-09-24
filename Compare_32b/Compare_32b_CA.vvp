@@ -1,0 +1,64 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x562778f20cf0 .scope module, "Compare_32b_CA_testbench" "Compare_32b_CA_testbench" 2 2;
+ .timescale -9 -9;
+v0x562778f6d6f0_0 .var "A", 32 0;
+v0x562778f6d7f0_0 .net "A_eq_B", 0 0, L_0x562778f6dd90;  1 drivers
+v0x562778f6d8b0_0 .net "A_gt_B", 0 0, L_0x562778f6db10;  1 drivers
+v0x562778f6d950_0 .net "A_lt_B", 0 0, L_0x562778f6dc00;  1 drivers
+v0x562778f6da20_0 .var "B", 32 0;
+L_0x562778f6de80 .part v0x562778f6d6f0_0, 0, 32;
+L_0x562778f6df20 .part v0x562778f6da20_0, 0, 32;
+S_0x562778f20e80 .scope module, "Comparator1" "Compare_32b_CA" 2 6, 3 2 0, S_0x562778f20cf0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "A_gt_B";
+    .port_info 1 /OUTPUT 1 "A_lt_B";
+    .port_info 2 /OUTPUT 1 "A_eq_B";
+    .port_info 3 /INPUT 32 "A";
+    .port_info 4 /INPUT 32 "B";
+P_0x562778f21060 .param/l "w" 0 3 2, +C4<00000000000000000000000000100000>;
+v0x562778f21100_0 .net "A", 31 0, L_0x562778f6de80;  1 drivers
+v0x562778f6d300_0 .net "A_eq_B", 0 0, L_0x562778f6dd90;  alias, 1 drivers
+v0x562778f6d3c0_0 .net "A_gt_B", 0 0, L_0x562778f6db10;  alias, 1 drivers
+v0x562778f6d460_0 .net "A_lt_B", 0 0, L_0x562778f6dc00;  alias, 1 drivers
+v0x562778f6d520_0 .net "B", 31 0, L_0x562778f6df20;  1 drivers
+L_0x562778f6db10 .cmp/gt 32, L_0x562778f6de80, L_0x562778f6df20;
+L_0x562778f6dc00 .cmp/gt 32, L_0x562778f6df20, L_0x562778f6de80;
+L_0x562778f6dd90 .cmp/eq 32, L_0x562778f6de80, L_0x562778f6df20;
+    .scope S_0x562778f20cf0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "Compare_32b_CA_testbench.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x562778f20cf0 {0 0 0};
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 33;
+    %store/vec4 v0x562778f6d6f0_0, 0, 33;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 33;
+    %store/vec4 v0x562778f6da20_0, 0, 33;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 33;
+    %store/vec4 v0x562778f6d6f0_0, 0, 33;
+    %delay 15, 0;
+    %pushi/vec4 1, 0, 33;
+    %store/vec4 v0x562778f6da20_0, 0, 33;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 33;
+    %store/vec4 v0x562778f6d6f0_0, 0, 33;
+    %delay 100, 0;
+    %vpi_call 2 20 "$stop" {0 0 0};
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Compare_32b_CA_testbench.v";
+    "Compare_32b_CA.v";

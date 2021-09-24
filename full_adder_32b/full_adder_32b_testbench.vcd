@@ -1,0 +1,56 @@
+$date
+	Mon Sep 20 18:43:05 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module full_adder_32b_testbench $end
+$var wire 33 ! sum [32:0] $end
+$var wire 1 " c_out $end
+$var reg 33 # a [32:0] $end
+$var reg 33 $ b [32:0] $end
+$var reg 1 % c_in $end
+$scope module adder2 $end
+$var wire 32 & a [31:0] $end
+$var wire 32 ' b [31:0] $end
+$var wire 1 % c_in $end
+$var wire 33 ( y [32:0] $end
+$var wire 33 ) sum [32:0] $end
+$var wire 1 " c_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10
+b1 !
+b1 )
+b1 (
+b1 &
+b1 #
+#25
+b0 !
+b0 )
+1"
+b10 (
+1%
+#45
+b1 !
+b1 )
+b11 (
+b1 '
+b1 $
+#170

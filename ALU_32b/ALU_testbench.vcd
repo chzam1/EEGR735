@@ -1,0 +1,103 @@
+$date
+	Fri Sep 24 03:19:29 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ALU_32b_testbench $end
+$var wire 16 ! y [15:0] $end
+$var reg 16 " A [15:0] $end
+$var reg 16 # B [15:0] $end
+$var reg 2 $ Op [1:0] $end
+$var reg 1 % clk $end
+$var reg 1 & reset $end
+$scope module ALU1 $end
+$var wire 16 ' A [15:0] $end
+$var wire 16 ( B [15:0] $end
+$var wire 2 ) Op [1:0] $end
+$var wire 1 & clk $end
+$var wire 1 * reset $end
+$var reg 16 + y [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 +
+1*
+b1 )
+b0 (
+b0 '
+x&
+1%
+b11 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+0*
+b0 $
+b0 )
+0%
+#20
+b1 )
+1%
+#25
+1*
+b1 $
+#30
+b0 )
+0%
+#40
+b1 )
+1%
+#45
+0*
+b10 $
+#50
+b0 )
+0%
+#60
+b1 )
+1%
+#70
+b0 )
+0%
+#75
+1*
+b11 $
+#80
+b1 )
+1%
+#90
+b0 )
+0%
+#100
+b1 )
+1%
+#110
+b0 )
+0%
+#120
+b1 )
+1%
+#130
+b0 )
+0%
+#140
+b1 )
+1%
+#150
+b0 )
+0%
+#160
+b1 )
+1%
+#170
+b0 )
+0%
+#175

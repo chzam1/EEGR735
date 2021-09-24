@@ -1,0 +1,50 @@
+$date
+	Mon Sep 20 18:17:32 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module Compare_32b_CA_testbench $end
+$var wire 1 ! A_lt_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 # A_eq_B $end
+$var reg 33 $ A [32:0] $end
+$var reg 33 % B [32:0] $end
+$scope module Comparator1 $end
+$var wire 32 & A [31:0] $end
+$var wire 32 ' B [31:0] $end
+$var wire 1 ! A_lt_B $end
+$var wire 1 " A_gt_B $end
+$var wire 1 # A_eq_B $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b0 &
+b0 %
+b0 $
+1#
+0"
+0!
+$end
+#10
+1"
+0#
+b1 &
+b1 $
+#25
+0"
+1#
+b1 '
+b1 %
+#45
+1!
+0#
+b0 &
+b0 $
+#145
