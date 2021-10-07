@@ -1,6 +1,8 @@
 # Full adder
 A full adder is a digital component that accepts three inputs, such as A, B, and Carry in, and outputs two outputs, SUM and Carryout, using logic gates. It is the most important component inside a processor's ALU, and it is used to increment addresses, table indexes, buffer pointers, and other locations where addition is necessary. By ORing the final outputs of two half adders, a complete adder can be formed. Because the full adder is a combinational circuit, it may be described using Verilog. Combinational logic is described by a Boolean equation, which is an expression of operations on variables.
 
+![img](/pix/F5.png)
+
 ## Verilog code for 32-bit full adder 
 Shows the system Verilog code of the behavioral model which is the functionality of the design
 
