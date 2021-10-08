@@ -1,0 +1,179 @@
+$date
+	Fri Oct  8 03:30:17 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_asmd_Decimator $end
+$var wire 16 ! R0 [15:0] $end
+$var reg 8 " Data [7:0] $end
+$var reg 1 # En $end
+$var reg 1 $ Ld $end
+$var reg 1 % clk $end
+$var reg 1 & rst $end
+$scope module module1 $end
+$var wire 8 ' Data [7:0] $end
+$var wire 1 # En $end
+$var wire 1 $ Ld $end
+$var wire 1 % clk $end
+$var wire 1 & rst $end
+$var wire 16 ( R0 [15:0] $end
+$var wire 1 ) Ld_R0 $end
+$var wire 1 * Ld_P1_P0 $end
+$var wire 1 + Clr_P1_P0 $end
+$scope module M0 $end
+$var wire 1 # En $end
+$var wire 1 $ Ld $end
+$var wire 1 % clk $end
+$var wire 1 & rst $end
+$var reg 1 + Clr_P1_P0 $end
+$var reg 1 * Ld_P1_P0 $end
+$var reg 1 ) Ld_R0 $end
+$var reg 2 , next_state [1:0] $end
+$var reg 2 - state [1:0] $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 + Clr_P1_P0 $end
+$var wire 8 . Data [7:0] $end
+$var wire 1 * Ld_P1_P0 $end
+$var wire 1 ) Ld_R0 $end
+$var wire 1 % clk $end
+$var wire 1 & rst $end
+$var reg 8 / P0 [7:0] $end
+$var reg 8 0 P1 [7:0] $end
+$var reg 16 1 R0 [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 1
+bx 0
+bx /
+b10000000 .
+bx -
+bx ,
+x+
+x*
+x)
+bx (
+b10000000 '
+x&
+0%
+x$
+x#
+b10000000 "
+bx !
+$end
+#5000
+1%
+#10000
+b0 /
+b0 0
+0%
+1&
+#15000
+1%
+0&
+#20000
+b0 ,
+0)
+0*
+0+
+0%
+0#
+#25000
+b0 -
+1%
+0$
+#30000
+1*
+b1 ,
+0%
+1#
+#35000
+b10 ,
+1*
+b1 -
+b10000000 0
+1%
+#40000
+0%
+#45000
+1)
+b11 ,
+0*
+b10 -
+b10000000 /
+1%
+#50000
+0%
+#55000
+0)
+b11 -
+b1110000 !
+b1110000 (
+b1110000 1
+1%
+#60000
+0%
+#65000
+1%
+#70000
+0%
+#75000
+1%
+#80000
+0%
+#85000
+1%
+#90000
+0%
+#95000
+1%
+#100000
+0%
+#105000
+1%
+#110000
+0%
+#115000
+1%
+#120000
+0%
+#125000
+1%
+#130000
+0%
+#135000
+1%
+#140000
+0%
+#145000
+1%
+#150000
+0%
+#155000
+1%
+#160000
+0%
+#165000
+1%
+#170000
+0%
+#175000
+1%
+#180000
+0%
+#185000
+1%
+#190000
+0%
+#195000
+1%
+#200000
+0%
