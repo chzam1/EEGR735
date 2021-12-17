@@ -1,0 +1,48 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/Multiplier_RR/runs/07-12_19-17/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/Multiplier_RR/runs/07-12_19-17/tmp/merged_unpadded.lef at line 68187.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/Multiplier_RR/runs/07-12_19-17/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/Multiplier_RR/runs/07-12_19-17/tmp/floorplan/6-pdn.def
+[INFO ODB-0128] Design: Multiplier_RR
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 197 components and 1183 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 728 connections.
+[INFO ODB-0133]     Created 142 nets and 455 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/Multiplier_RR/runs/07-12_19-17/tmp/floorplan/6-pdn.def
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 56120 59840
+[INFO GPL-0006] NumInstances: 197
+[INFO GPL-0007] NumPlaceInstances: 131
+[INFO GPL-0008] NumFixedInstances: 66
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 142
+[INFO GPL-0011] NumPins: 475
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 61660 72380
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 56120 59840
+[INFO GPL-0016] CoreArea: 2477376000
+[INFO GPL-0017] NonPlaceInstsArea: 172665600
+[INFO GPL-0018] PlaceInstsArea: 1281228800
+[INFO GPL-0019] Util(%): 55.59
+[INFO GPL-0020] StdInstsArea: 1281228800
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG Error: 0.00000012 HPWL: 2444650
+[InitialPlace]  Iter: 2 CG Error: 0.00000011 HPWL: 2250112
+[InitialPlace]  Iter: 3 CG Error: 0.00000004 HPWL: 2250015
+[InitialPlace]  Iter: 4 CG Error: 0.00000011 HPWL: 2257483
+[InitialPlace]  Iter: 5 CG Error: 0.00000009 HPWL: 2256217
+[ERROR GPL-0302] Use a higher -density or re-floorplan with a larger core area.
+Given target density: 0.55
+Suggested target density: 0.56
+Error: or_replace.tcl, 93 GPL-0302

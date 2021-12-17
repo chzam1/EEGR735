@@ -1,0 +1,432 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef at line 68187.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/results/placement/Multiplier_RR.placement.def
+[INFO ODB-0128] Design: Multiplier_RR
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 752 components and 2569 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2070 connections.
+[INFO ODB-0133]     Created 164 nets and 499 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/results/placement/Multiplier_RR.placement.def
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 6148
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 13
+[INFO GRT-0017] Processing 7088 blockages on layer li1.
+[INFO GRT-0017] Processing 1910 blockages on layer met1.
+[INFO GRT-0017] Processing 3 blockages on layer met4.
+[INFO GRT-0017] Processing 3 blockages on layer met5.
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical        11760           781          93.36%
+met1       Horizontal      15680         13494          13.94%
+met2       Vertical        11760         11691          0.59%
+met3       Horizontal       7840          7776          0.82%
+met4       Vertical         4704          4674          0.64%
+met5       Horizontal       1568          1512          3.57%
+---------------------------------------------------------------
+
+[INFO GRT-0191] Wirelength: 771, Wirelength1: 0
+[INFO GRT-0192] Number of segments: 282
+[INFO GRT-0193] Number of shifts: 0
+[INFO GRT-0097] First L Route.
+[INFO GRT-0191] Wirelength: 771, Wirelength1: 771
+[INFO GRT-0192] Number of segments: 282
+[INFO GRT-0193] Number of shifts: 0
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 22782
+[INFO GRT-0137] Total vCap               : 17146
+[INFO GRT-0138] Total usage              : 771
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0098] Second L Route.
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 22782
+[INFO GRT-0137] Total vCap               : 17146
+[INFO GRT-0138] Total usage              : 771
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0099] First Z Route.
+[INFO GRT-0135] Overflow report.
+[INFO GRT-0136] Total hCap               : 22782
+[INFO GRT-0137] Total vCap               : 17146
+[INFO GRT-0138] Total usage              : 771
+[INFO GRT-0139] Max H overflow           : 0
+[INFO GRT-0140] Max V overflow           : 0
+[INFO GRT-0141] Max overflow             : 0
+[INFO GRT-0142] Number of overflow edges : 0
+[INFO GRT-0143] H   overflow             : 0
+[INFO GRT-0144] V   overflow             : 0
+[INFO GRT-0145] Final overflow           : 0
+
+[INFO GRT-0100] LV routing round 0, enlarge 10.
+[INFO GRT-0182] 10 threshold, 10 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 771
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0100] LV routing round 1, enlarge 15.
+[INFO GRT-0182] 5 threshold, 15 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 771
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0100] LV routing round 2, enlarge 20.
+[INFO GRT-0182] 1 threshold, 20 expand.
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 771
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+Usage checked
+[INFO GRT-0105] Maze routing finished.
+Final 2D results:
+[INFO GRT-0126] Overflow report:
+[INFO GRT-0127] Total usage          : 771
+[INFO GRT-0128] Max H overflow       : 0
+[INFO GRT-0129] Max V overflow       : 0
+[INFO GRT-0130] Max overflow         : 0
+[INFO GRT-0131] Number overflow edges: 0
+[INFO GRT-0132] H   overflow         : 0
+[INFO GRT-0133] V   overflow         : 0
+[INFO GRT-0134] Final overflow       : 0
+
+[INFO GRT-0106] Layer assignment begins.
+[INFO GRT-0107] Layer assignment finished.
+[INFO GRT-0108] Post-processing begins.
+[INFO GRT-0109] Post-processing finished.
+ Starting via filling.
+[INFO GRT-0197] Via related to pin nodes: 628
+[INFO GRT-0198] Via related Steiner nodes: 20
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 715
+[INFO GRT-0112] Final usage 3D: 2904
+[WARNING GRT-0211] dbGcellGrid already exists in db. Clearing existing dbGCellGrid.
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                781            23            2.94%             0 /  0 /  0
+met1             13494           403            2.99%             0 /  0 /  0
+met2             11691           333            2.85%             0 /  0 /  0
+met3              7776             0            0.00%             0 /  0 /  0
+met4              4674             0            0.00%             0 /  0 /  0
+met5              1512             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            39928           759            1.90%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 8079 um
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 4 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 0
+[INFO GRT-0014] Routed nets: 164
+###############################################################################
+# Created by write_sdc
+# Wed Dec  8 18:01:51 2021
+###############################################################################
+current_design Multiplier_RR
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clock -period 100.0000 [get_ports {clock}]
+set_propagated_clock [get_clocks {clock}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {Start}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {reset}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[0]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[1]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[2]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[3]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[0]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[1]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[2]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[3]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {Ready}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[0]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[1]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[2]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[3]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[4]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[5]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[6]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[7]}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0177 [get_ports {Ready}]
+set_load -pin_load 0.0177 [get_ports {product[7]}]
+set_load -pin_load 0.0177 [get_ports {product[6]}]
+set_load -pin_load 0.0177 [get_ports {product[5]}]
+set_load -pin_load 0.0177 [get_ports {product[4]}]
+set_load -pin_load 0.0177 [get_ports {product[3]}]
+set_load -pin_load 0.0177 [get_ports {product[2]}]
+set_load -pin_load 0.0177 [get_ports {product[1]}]
+set_load -pin_load 0.0177 [get_ports {product[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {Start}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clock}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[0]}]
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+timing_report
+No paths found.
+timing_report_end
+min_max_report
+Startpoint: reset (input port clocked by clock)
+Endpoint: _242_ (removal check against rising-edge clock clock)
+Path Group: **async_default**
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                         20.00   20.00 v input external delay
+                  0.00    0.00   20.00 v reset (in)
+     1    0.00                           reset (net)
+                  0.00    0.00   20.00 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.09   20.09 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           net2 (net)
+                  0.06    0.01   20.10 v _123_/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.07   20.17 ^ _123_/Y (sky130_fd_sc_hd__inv_2)
+     5    0.02                           _072_ (net)
+                  0.06    0.00   20.17 ^ _210_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.06   20.23 ^ _210_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           _051_ (net)
+                  0.04    0.00   20.23 ^ _242_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+                                 20.23   data arrival time
+
+                          0.00    0.00   clock clock (rise edge)
+                          0.48    0.48   clock network delay (propagated)
+                          0.00    0.48   clock reconvergence pessimism
+                                  0.48 ^ _242_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                          0.21    0.69   library removal time
+                                  0.69   data required time
+-----------------------------------------------------------------------------
+                                  0.69   data required time
+                                -20.23   data arrival time
+-----------------------------------------------------------------------------
+                                 19.55   slack (MET)
+
+
+Startpoint: _235_ (rising edge-triggered flip-flop clocked by clock)
+Endpoint: _235_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clock (rise edge)
+                          0.19    0.19   clock network delay (propagated)
+                  0.04    0.00    0.19 ^ _235_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                  0.06    0.22    0.42 ^ _235_/Q (sky130_fd_sc_hd__dfrtp_1)
+     3    0.01                           M1_Datapath.product[8] (net)
+                  0.06    0.00    0.42 ^ _164_/A1 (sky130_fd_sc_hd__a31oi_1)
+                  0.02    0.04    0.46 v _164_/Y (sky130_fd_sc_hd__a31oi_1)
+     1    0.00                           _060_ (net)
+                  0.02    0.00    0.47 v _235_/D (sky130_fd_sc_hd__dfrtp_1)
+                                  0.47   data arrival time
+
+                          0.00    0.00   clock clock (rise edge)
+                          0.48    0.48   clock network delay (propagated)
+                         -0.28    0.19   clock reconvergence pessimism
+                                  0.19 ^ _235_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                         -0.02    0.17   library hold time
+                                  0.17   data required time
+-----------------------------------------------------------------------------
+                                  0.17   data required time
+                                 -0.47   data arrival time
+-----------------------------------------------------------------------------
+                                  0.30   slack (MET)
+
+
+Startpoint: reset (input port clocked by clock)
+Endpoint: _228_ (recovery check against rising-edge clock clock)
+Path Group: **async_default**
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                         20.00   20.00 v input external delay
+                  0.01    0.00   20.00 v reset (in)
+     1    0.00                           reset (net)
+                  0.01    0.00   20.00 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.15    0.24   20.24 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           net2 (net)
+                  0.15    0.01   20.25 v _123_/A (sky130_fd_sc_hd__inv_2)
+                  0.14    0.17   20.43 ^ _123_/Y (sky130_fd_sc_hd__inv_2)
+     5    0.02                           _072_ (net)
+                  0.14    0.00   20.43 ^ _171_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.33    0.38   20.81 ^ _171_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _097_ (net)
+                  0.33    0.01   20.81 ^ _180_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.11    0.27   21.08 ^ _180_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           _037_ (net)
+                  0.11    0.00   21.09 ^ _228_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                 21.09   data arrival time
+
+                        100.00  100.00   clock clock (rise edge)
+                          0.19  100.19   clock network delay (propagated)
+                          0.00  100.19   clock reconvergence pessimism
+                                100.19 ^ _228_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                          0.42  100.61   library recovery time
+                                100.61   data required time
+-----------------------------------------------------------------------------
+                                100.61   data required time
+                                -21.09   data arrival time
+-----------------------------------------------------------------------------
+                                 79.53   slack (MET)
+
+
+Startpoint: reset (input port clocked by clock)
+Endpoint: Ready (output port clocked by clock)
+Path Group: clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                         20.00   20.00 v input external delay
+                  0.01    0.00   20.00 v reset (in)
+     1    0.00                           reset (net)
+                  0.01    0.00   20.00 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.15    0.24   20.24 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           net2 (net)
+                  0.15    0.01   20.25 v _187_/A (sky130_fd_sc_hd__nor2_1)
+                  0.30    0.33   20.58 ^ _187_/Y (sky130_fd_sc_hd__nor2_1)
+     1    0.01                           net11 (net)
+                  0.30    0.00   20.59 ^ output11/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.19    0.37   20.96 ^ output11/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           Ready (net)
+                  0.20    0.01   20.97 ^ Ready (out)
+                                 20.97   data arrival time
+
+                        100.00  100.00   clock clock (rise edge)
+                          0.00  100.00   clock network delay (propagated)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -20.97   data arrival time
+-----------------------------------------------------------------------------
+                                 59.03   slack (MET)
+
+
+min_max_report_end
+check_report
+No paths found.
+check_report_end
+wns 0.00
+tns 0.00

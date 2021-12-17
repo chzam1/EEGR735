@@ -1,0 +1,352 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef at line 68187.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/floorplan/6-pdn.def
+[INFO ODB-0128] Design: Multiplier_STG
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 702 components and 2223 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1870 connections.
+[INFO ODB-0133]     Created 114 nets and 353 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/floorplan/6-pdn.def
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 194120 187680
+[INFO GPL-0006] NumInstances: 702
+[INFO GPL-0007] NumPlaceInstances: 103
+[INFO GPL-0008] NumFixedInstances: 599
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 114
+[INFO GPL-0011] NumPins: 373
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 200000 200000
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 194120 187680
+[INFO GPL-0016] CoreArea: 33344480000
+[INFO GPL-0017] NonPlaceInstsArea: 1074780800
+[INFO GPL-0018] PlaceInstsArea: 1017225600
+[INFO GPL-0019] Util(%): 3.15
+[INFO GPL-0020] StdInstsArea: 1017225600
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG Error: 0.00000004 HPWL: 4292200
+[InitialPlace]  Iter: 2 CG Error: 0.00000011 HPWL: 3552826
+[InitialPlace]  Iter: 3 CG Error: 0.00000006 HPWL: 3553879
+[InitialPlace]  Iter: 4 CG Error: 0.00000007 HPWL: 3555557
+[InitialPlace]  Iter: 5 CG Error: 0.00000009 HPWL: 3554866
+[INFO GPL-0031] FillerInit: NumGCells: 2004
+[INFO GPL-0032] FillerInit: NumGNets: 114
+[INFO GPL-0033] FillerInit: NumGPins: 373
+[INFO GPL-0023] TargetDensity: 0.57
+[INFO GPL-0024] AveragePlaceInstArea: 9875976
+[INFO GPL-0025] IdealBinArea: 17326274
+[INFO GPL-0026] IdealBinCnt: 1924
+[INFO GPL-0027] TotalBinArea: 33344480000
+[INFO GPL-0028] BinCnt: 32 32
+[INFO GPL-0029] BinSize: 5894 5525
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter: 1 overflow: 0.696844 HPWL: 3339969
+[INFO GPL-0100] worst slack 1e+30
+[WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
+[NesterovSolve] Snapshot saved at iter = 1
+[NesterovSolve] Iter: 10 overflow: 0.352198 HPWL: 3659691
+[NesterovSolve] Iter: 20 overflow: 0.316243 HPWL: 3402451
+[NesterovSolve] Iter: 30 overflow: 0.517887 HPWL: 3409761
+[NesterovSolve] Iter: 40 overflow: 0.641858 HPWL: 3132295
+[NesterovSolve] Iter: 50 overflow: 0.485411 HPWL: 3565818
+[NesterovSolve] Iter: 60 overflow: 0.281774 HPWL: 3521821
+[NesterovSolve] Iter: 70 overflow: 0.482307 HPWL: 3418391
+[NesterovSolve] Iter: 80 overflow: 0.636132 HPWL: 3021117
+[NesterovSolve] Iter: 90 overflow: 0.589035 HPWL: 3368357
+[NesterovSolve] Iter: 100 overflow: 0.238249 HPWL: 3952553
+[NesterovSolve] Iter: 110 overflow: 0.270841 HPWL: 3638943
+[NesterovSolve] Iter: 120 overflow: 0.371164 HPWL: 3444745
+[NesterovSolve] Iter: 130 overflow: 0.619591 HPWL: 3185953
+[NesterovSolve] Iter: 140 overflow: 0.615113 HPWL: 3107648
+[NesterovSolve] Iter: 150 overflow: 0.456529 HPWL: 3638060
+[NesterovSolve] Iter: 160 overflow: 0.29967 HPWL: 3778011
+[NesterovSolve] Iter: 170 overflow: 0.319422 HPWL: 3447768
+[NesterovSolve] Iter: 180 overflow: 0.47522 HPWL: 3567982
+[NesterovSolve] Iter: 190 overflow: 0.585817 HPWL: 3160288
+[NesterovSolve] Iter: 200 overflow: 0.605505 HPWL: 3242291
+[NesterovSolve] Iter: 210 overflow: 0.362287 HPWL: 3634367
+[NesterovSolve] Iter: 220 overflow: 0.26175 HPWL: 3587643
+[NesterovSolve] Iter: 230 overflow: 0.456003 HPWL: 3420165
+[NesterovSolve] Iter: 240 overflow: 0.566558 HPWL: 3180739
+[NesterovSolve] Iter: 250 overflow: 0.584354 HPWL: 3257618
+[NesterovSolve] Iter: 260 overflow: 0.412947 HPWL: 3570654
+[NesterovSolve] Iter: 270 overflow: 0.236299 HPWL: 3684732
+[NesterovSolve] Iter: 280 overflow: 0.348831 HPWL: 3483106
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 5229
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 18
+[INFO GRT-0017] Processing 5759 blockages on layer li1.
+[INFO GRT-0017] Processing 1810 blockages on layer met1.
+[INFO GRT-0017] Processing 3 blockages on layer met4.
+[INFO GRT-0017] Processing 3 blockages on layer met5.
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical        11760         11578          1.55%
+met1       Horizontal      15680         13549          13.59%
+met2       Vertical        11760         11691          0.59%
+met3       Horizontal       7840          7776          0.82%
+met4       Vertical         4704          4674          0.64%
+met5       Horizontal       1568          1512          3.57%
+---------------------------------------------------------------
+
+[INFO GRT-0111] Final number of vias: 238
+[INFO GRT-0112] Final usage 3D: 1275
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1              11578           298            2.57%             0 /  0 /  0
+met1             13549           263            1.94%             0 /  0 /  0
+met2             11691             0            0.00%             0 /  0 /  0
+met3              7776             0            0.00%             0 /  0 /  0
+met4              4674             0            0.00%             0 /  0 /  0
+met5              1512             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            50780           561            1.10%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 6223 um
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 28 29
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 812
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.709090915593234
+[INFO GPL-0067] 1.0%RC: 0.604545457796617
+[INFO GPL-0068] 2.0%RC: 0.5465909093618393
+[INFO GPL-0069] 5.0%RC: 0.41090909323909064
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.6568182
+[NesterovSolve] Iter: 290 overflow: 0.186497 HPWL: 3541638
+[NesterovSolve] Iter: 300 overflow: 0.341693 HPWL: 3530532
+[NesterovSolve] Iter: 310 overflow: 0.340058 HPWL: 3362012
+[NesterovSolve] Iter: 320 overflow: 0.440136 HPWL: 3202562
+[NesterovSolve] Iter: 330 overflow: 0.422014 HPWL: 3163542
+[NesterovSolve] Iter: 340 overflow: 0.353368 HPWL: 3195377
+[NesterovSolve] Iter: 350 overflow: 0.34528 HPWL: 3185907
+[NesterovSolve] Iter: 360 overflow: 0.300608 HPWL: 3183754
+[NesterovSolve] Iter: 370 overflow: 0.265155 HPWL: 3198112
+[NesterovSolve] Iter: 380 overflow: 0.232232 HPWL: 3219176
+[NesterovSolve] Iter: 390 overflow: 0.208296 HPWL: 3240320
+[NesterovSolve] Iter: 400 overflow: 0.177083 HPWL: 3260849
+[NesterovSolve] Iter: 410 overflow: 0.139009 HPWL: 3278672
+[NesterovSolve] Iter: 420 overflow: 0.123003 HPWL: 3288695
+[NesterovSolve] Iter: 430 overflow: 0.108154 HPWL: 3277403
+[NesterovSolve] Finished with Overflow: 0.098624
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 20.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 20.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+timing_report
+No paths found.
+timing_report_end
+min_max_report
+Startpoint: reset (input port clocked by clock)
+Endpoint: _171_ (removal check against rising-edge clock clock)
+Path Group: **async_default**
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 v input external delay
+                  0.01    0.00   20.00 v reset (in)
+     1    0.01                           reset (net)
+                  0.01    0.00   20.00 v _088_/A (sky130_fd_sc_hd__inv_2)
+                  0.04    0.04   20.04 ^ _088_/Y (sky130_fd_sc_hd__inv_2)
+     2    0.01                           _058_ (net)
+                  0.04    0.00   20.04 ^ _145_/A (sky130_fd_sc_hd__buf_1)
+                  0.14    0.13   20.17 ^ _145_/X (sky130_fd_sc_hd__buf_1)
+     5    0.02                           _043_ (net)
+                  0.14    0.00   20.17 ^ _150_/A (sky130_fd_sc_hd__buf_1)
+                  0.04    0.06   20.23 ^ _150_/X (sky130_fd_sc_hd__buf_1)
+     1    0.00                           _004_ (net)
+                  0.04    0.00   20.23 ^ _171_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                 20.23   data arrival time
+
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ _171_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                          0.21    0.21   library removal time
+                                  0.21   data required time
+-----------------------------------------------------------------------------
+                                  0.21   data required time
+                                -20.23   data arrival time
+-----------------------------------------------------------------------------
+                                 20.02   slack (MET)
+
+
+Startpoint: _180_ (rising edge-triggered flip-flop clocked by clock)
+Endpoint: _180_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _180_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                  0.04    0.23    0.23 ^ _180_/Q (sky130_fd_sc_hd__dfrtp_2)
+     2    0.01                           M1_Datapath.multiplicand[0] (net)
+                  0.04    0.00    0.23 ^ _095_/A1 (sky130_fd_sc_hd__a22o_2)
+                  0.02    0.07    0.30 ^ _095_/X (sky130_fd_sc_hd__a22o_2)
+     1    0.00                           _026_ (net)
+                  0.02    0.00    0.30 ^ _180_/D (sky130_fd_sc_hd__dfrtp_2)
+                                  0.30   data arrival time
+
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ _180_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                         -0.02   -0.02   library hold time
+                                 -0.02   data required time
+-----------------------------------------------------------------------------
+                                 -0.02   data required time
+                                 -0.30   data arrival time
+-----------------------------------------------------------------------------
+                                  0.32   slack (MET)
+
+
+Startpoint: reset (input port clocked by clock)
+Endpoint: _181_ (recovery check against rising-edge clock clock)
+Path Group: **async_default**
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 v input external delay
+                  0.02    0.01   20.01 v reset (in)
+     1    0.01                           reset (net)
+                  0.02    0.00   20.01 v _088_/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.08   20.09 ^ _088_/Y (sky130_fd_sc_hd__inv_2)
+     2    0.01                           _058_ (net)
+                  0.08    0.00   20.09 ^ _089_/A (sky130_fd_sc_hd__buf_1)
+                  0.33    0.35   20.44 ^ _089_/X (sky130_fd_sc_hd__buf_1)
+     5    0.02                           _059_ (net)
+                  0.33    0.00   20.44 ^ _090_/A (sky130_fd_sc_hd__buf_1)
+                  0.29    0.40   20.84 ^ _090_/X (sky130_fd_sc_hd__buf_1)
+     5    0.01                           _015_ (net)
+                  0.29    0.00   20.84 ^ _092_/A (sky130_fd_sc_hd__buf_1)
+                  0.09    0.24   21.09 ^ _092_/X (sky130_fd_sc_hd__buf_1)
+     1    0.00                           _014_ (net)
+                  0.09    0.00   21.09 ^ _181_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                 21.09   data arrival time
+
+                  0.00  100.00  100.00   clock clock (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                                100.00 ^ _181_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                          0.43  100.43   library recovery time
+                                100.43   data required time
+-----------------------------------------------------------------------------
+                                100.43   data required time
+                                -21.09   data arrival time
+-----------------------------------------------------------------------------
+                                 79.35   slack (MET)
+
+
+Startpoint: reset (input port clocked by clock)
+Endpoint: Ready (output port clocked by clock)
+Path Group: clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 v input external delay
+                  0.02    0.01   20.01 v reset (in)
+     1    0.01                           reset (net)
+                  0.02    0.00   20.01 v _088_/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.08   20.09 ^ _088_/Y (sky130_fd_sc_hd__inv_2)
+     2    0.01                           _058_ (net)
+                  0.08    0.00   20.09 ^ _089_/A (sky130_fd_sc_hd__buf_1)
+                  0.33    0.35   20.44 ^ _089_/X (sky130_fd_sc_hd__buf_1)
+     5    0.02                           _059_ (net)
+                  0.33    0.00   20.44 ^ _158_/A1 (sky130_fd_sc_hd__o21a_2)
+                  0.27    0.53   20.96 ^ _158_/X (sky130_fd_sc_hd__o21a_2)
+     1    0.02                           Ready (net)
+                  0.27    0.00   20.97 ^ Ready (out)
+                                 20.97   data arrival time
+
+                  0.00  100.00  100.00   clock clock (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -20.97   data arrival time
+-----------------------------------------------------------------------------
+                                 59.03   slack (MET)
+
+
+min_max_report_end
+check_report
+No paths found.
+check_report_end
+wns 0.00
+tns 0.00

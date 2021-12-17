@@ -1,0 +1,19 @@
+Design Name: Multiplier_STG
+Run Directory: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/reports/magic//35-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/results/lvs/Multiplier_STG.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/reports/routing//37-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

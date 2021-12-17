@@ -1,0 +1,112 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef at line 68187.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/placement/12-resizer_timing.def
+[INFO ODB-0128] Design: Multiplier_RR
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 752 components and 2569 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2070 connections.
+[INFO ODB-0133]     Created 164 nets and 499 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/Multiplier_RR/runs/08-12_17-59/tmp/placement/12-resizer_timing.def
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 20.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 20.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0224] Chose via L1M1_PR as default.
+[INFO GRT-0224] Chose via M1M2_PR as default.
+[INFO GRT-0224] Chose via M2M3_PR as default.
+[INFO GRT-0224] Chose via M3M4_PR as default.
+[INFO GRT-0224] Chose via M4M5_PR as default.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 6148
+[INFO GRT-0019] Found 4 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 13
+[INFO GRT-0017] Processing 7088 blockages on layer li1.
+[INFO GRT-0017] Processing 1910 blockages on layer met1.
+[INFO GRT-0017] Processing 3 blockages on layer met4.
+[INFO GRT-0017] Processing 3 blockages on layer met5.
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical        11760         11505          2.17%
+met1       Horizontal      15680         13494          13.94%
+met2       Vertical        11760         11691          0.59%
+met3       Horizontal       7840          7776          0.82%
+met4       Vertical         4704          4674          0.64%
+met5       Horizontal       1568          1512          3.57%
+---------------------------------------------------------------
+
+[INFO GRT-0111] Final number of vias: 303
+[INFO GRT-0112] Final usage 3D: 1669
+[WARNING GRT-0211] dbGcellGrid already exists in db. Clearing existing dbGCellGrid.
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1              11505           376            3.27%             0 /  0 /  0
+met1             13494           376            2.79%             0 /  0 /  0
+met2             11691             8            0.07%             0 /  0 /  0
+met3              7776             0            0.00%             0 /  0 /  0
+met4              4674             0            0.00%             0 /  0 /  0
+met5              1512             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            50652           760            1.50%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 8066 um
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            5087.9 u
+legalized HPWL           5192.8 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 68 instances
+[INFO DPL-0021] HPWL before            5192.8 u
+[INFO DPL-0022] HPWL after             5087.9 u
+[INFO DPL-0023] HPWL delta               -2.0 %

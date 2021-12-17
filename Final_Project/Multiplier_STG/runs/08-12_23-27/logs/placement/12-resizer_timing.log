@@ -1,0 +1,88 @@
+OpenROAD 1 fb8ae93b6c7a5eb0e6fac83360a8a48d76c41885
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef at line 68187.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/results/cts/Multiplier_STG.cts.def
+[INFO ODB-0128] Design: Multiplier_STG
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 721 components and 2337 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1946 connections.
+[INFO ODB-0133]     Created 133 nets and 391 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/Multiplier_STG/runs/08-12_23-27/results/cts/Multiplier_STG.cts.def
+###############################################################################
+# Created by write_sdc
+# Wed Dec  8 23:28:54 2021
+###############################################################################
+current_design Multiplier_STG
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clock -period 100.0000 [get_ports {clock}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {Start}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {reset}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[0]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[1]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[2]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word1[3]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[0]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[1]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[2]}]
+set_input_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {word2[3]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {Ready}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[0]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[1]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[2]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[3]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[4]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[5]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[6]}]
+set_output_delay 20.0000 -clock [get_clocks {clock}] -add_delay [get_ports {product[7]}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0177 [get_ports {Ready}]
+set_load -pin_load 0.0177 [get_ports {product[7]}]
+set_load -pin_load 0.0177 [get_ports {product[6]}]
+set_load -pin_load 0.0177 [get_ports {product[5]}]
+set_load -pin_load 0.0177 [get_ports {product[4]}]
+set_load -pin_load 0.0177 [get_ports {product[3]}]
+set_load -pin_load 0.0177 [get_ports {product[2]}]
+set_load -pin_load 0.0177 [get_ports {product[1]}]
+set_load -pin_load 0.0177 [get_ports {product[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {Start}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clock}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word1[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {word2[0]}]
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement        140.0 u
+average displacement        0.2 u
+max displacement           13.6 u
+original HPWL            3783.5 u
+legalized HPWL           4057.2 u
+delta HPWL                    7 %
+
+[INFO DPL-0020] Mirrored 64 instances
+[INFO DPL-0021] HPWL before            4057.2 u
+[INFO DPL-0022] HPWL after             3942.4 u
+[INFO DPL-0023] HPWL delta               -2.8 %

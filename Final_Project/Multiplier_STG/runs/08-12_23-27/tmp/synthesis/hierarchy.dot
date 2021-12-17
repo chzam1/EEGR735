@@ -1,0 +1,35 @@
+digraph "Multiplier_STG" {
+label="Multiplier_STG";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="Add", color="black", fontcolor="black" ];
+n2 [ shape=diamond, label="Shift", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="Load_words", color="black", fontcolor="black" ];
+n4 [ shape=diamond, label="m0", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="clock", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="Start", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="word2", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="word1", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="Ready", color="black", fontcolor="black" ];
+n11 [ shape=octagon, label="product", color="black", fontcolor="black" ];
+c12 [ shape=record, label="{{<p1> Add|<p3> Load_words|<p2> Shift|<p6> clock|<p5> reset|<p9> word1|<p8> word2}|M1_Datapath\nDatapath_Unit|{<p4> m0|<p11> product}}" ];
+c13 [ shape=record, label="{{<p7> Start|<p6> clock|<p4> m0|<p5> reset}|M0_Controller\nControl_Unit|{<p1> Add|<p3> Load_words|<p10> Ready|<p2> Shift}}" ];
+c13:p1:e -> n1:w [color="black", label=""];
+n1:e -> c12:p1:w [color="black", label=""];
+c13:p10:e -> n10:w [color="black", label=""];
+c12:p11:e -> n11:w [color="black", style="setlinewidth(3)", label=""];
+c13:p2:e -> n2:w [color="black", label=""];
+n2:e -> c12:p2:w [color="black", label=""];
+c13:p3:e -> n3:w [color="black", label=""];
+n3:e -> c12:p3:w [color="black", label=""];
+c12:p4:e -> n4:w [color="black", label=""];
+n4:e -> c13:p4:w [color="black", label=""];
+n5:e -> c12:p5:w [color="black", label=""];
+n5:e -> c13:p5:w [color="black", label=""];
+n6:e -> c12:p6:w [color="black", label=""];
+n6:e -> c13:p6:w [color="black", label=""];
+n7:e -> c13:p7:w [color="black", label=""];
+n8:e -> c12:p8:w [color="black", style="setlinewidth(3)", label=""];
+n9:e -> c12:p9:w [color="black", style="setlinewidth(3)", label=""];
+}
