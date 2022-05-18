@@ -9,8 +9,8 @@ module Multiplier_RR #(parameter L_word = 4)(
 Control_Unit M0_Controller(.Ready(Ready), .Load_words(Load_words), .Flush(Flush), .Add_shift(Add_shift), .Shift(Shift),
                            .Start(Start), .Empty(Empty), .p0(p0), .c_is_ws(c_is_ws), .clock(clock), .reset(reset));
 
-Datapath_Unit M1_Datapath(.product(product),  .word1(word1), .word2(word2),
-                                           .Load_words(Load_words), .Flush(Flush), .Add_shift(Add_shift), .Shift(Shift), .Empty(Empty), .p0(p0), .c_is_ws(c_is_ws), .clock(clock), .reset(reset));
+  Datapath_Unit M1_Datapath(.product(product),  .word1(word1), .word2(word2), .Load_words(Load_words), .Flush(Flush), .Add_shift(Add_shift),
+                                            .Shift(Shift), .Empty(Empty), .p0(p0), .c_is_ws(c_is_ws), .clock(clock), .reset(reset));
 
 endmodule
 
