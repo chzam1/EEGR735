@@ -8,7 +8,8 @@ wire        m0, Load_words, Shift;
 
 Control_Unit M0_Controller (.Load_words(Load_words), .Shift(Shift), .Add(Add), .Ready(Ready), .m0(m0), .Start(Start), .clock(clock), .reset(reset));
 
-Datapath_Unit M1_Datapath (.product(product), .m0(m0), .word1(word1), .word2(word2), .Load_words(Load_words), .Shift(Shift), .Add(Add), .clock(clock), .reset(reset));
+Datapath_Unit M1_Datapath (.product(product), .m0(m0), .word1(word1), .word2(word2), .Load_words(Load_words), .Shift(Shift), 
+                           .Add(Add), .clock(clock), .reset(reset));
 endmodule
 
 module Control_Unit #(parameter L_word = 4, L_state = 4)     //Datapath size, state
